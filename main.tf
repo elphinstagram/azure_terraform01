@@ -113,7 +113,8 @@ resource "azurerm_linux_virtual_machine" "terra-vm01" {
 
   admin_ssh_key {
     username   = "adminuser"
-    public_key = file("~/.ssh/terra-sshkey.pub")
+    #public_key = file("~/.ssh/terra-sshkey.pub")
+    public_key = file("~/.ssh/terra-azure.pub")
   }
 
   os_disk {
